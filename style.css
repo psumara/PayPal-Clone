@@ -18,7 +18,7 @@ html{
 .section-1{
     width: 100%;
     height: 65vh;
-    background: linear-gradient(to top, rgba(38,38,38,.7), rgba(38,38,38.6)), url(images/bg.jpg) center no-repeat;
+    background: linear-gradient(to top, rgba(138, 136, 136, 0.7), rgba(38,38,38.6)), url(images/bg.jpg) center no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -130,9 +130,20 @@ html{
     flex-direction: column;
 }
 
+.nav-dropdown-item-2{
+    width: 25rem;
+    margin: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .nav-dropdown-link-1{
     font-size: 1.6rem;
     color: #fff;
+}
+
+.nav-dropdown-item:hover{
+    text-decoration: underline;
 }
 
 .nav-dropdown-link-2{
@@ -151,6 +162,10 @@ html{
 .nav-dropdown-link-4{
     font-size: 1.8rem;
     color:#fff;
+}
+
+.nav-dropdown-link-4:hover{
+    text-decoration: underline;
 }
 
 .nav-list-link{
@@ -185,12 +200,12 @@ html{
     transition: transform .3s;
 }
 
-.navbar-btn:nth-child(1){
+.login-btn{
     background-color: transparent;
     color: #fff;
 }
 
-.navbar-btn:nth-child(2){
+.signup-btn{
     background-color: #fff;
     color: #262626;
 }
