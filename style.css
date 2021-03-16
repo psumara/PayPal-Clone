@@ -12,7 +12,36 @@
 html{
    font-size: 62.5%; 
 }
+
+.logo{
+    font-size: 3.5rem;
+    font-style: italic;
+    font-weight: 800;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.p-1{
+    font-size: 4.5rem;
+    margin-right: 1rem;
+    position: relative;
+    z-index: 10;
+}
+
+.p-2{
+    font-size: 4.5rem;
+    color: #bbb;
+    position: absolute;
+    top: .4rem;
+    left: .5rem;
+}
 /* End of Common styles */
+
+/* Front Page */
+.front-page{
+   
+}
 
 /* Section 1 */
 .section-1{
@@ -39,28 +68,6 @@ html{
     align-items: center;
 }
 
-.navbar-logo{
-    font-size: 3.5rem;
-    font-style: italic;
-    font-weight: 800;
-    color: #fff;
-    position: relative;
-}
-
-.p-1{
-    font-size: 4.5rem;
-    margin-right: 1rem;
-    position: relative;
-    z-index: 10;
-}
-
-.p-2{
-    font-size: 4.5rem;
-    color: #bbb;
-    position: absolute;
-    top: .4rem;
-    left: .5rem;
-}
 
 .nav-list{
     display: flex;
@@ -585,9 +592,217 @@ html{
     color: #646161;
     font-weight: 500;
 }
-
-
-
-
-
 /* End of Section 5 */
+/* End of Front Page */
+
+/* Login Page */
+.login-page{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: none;
+}
+
+.login-page-content{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: .1rem solid #cfcfcf;
+    padding: 3rem;
+}
+
+.login-page-logo{
+    margin-bottom: 1.2rem;
+}
+
+.login-page-logo .p-1{
+    color: #064699;
+}
+
+.login-page-logo .p-2{
+    color: #32a4f0;
+}
+
+.login-page-logo span:nth-child(3){
+    color: #064699;
+}
+
+.login-page-logo span:nth-child(4){
+    color: #32a4f0;
+}
+
+.login-page-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-page-form input{
+    width: 37rem;
+    height: 4.5rem;
+    margin: 1rem;
+    border-radius: .5rem;
+}
+
+.form-login-input{
+    padding: 0 1.5rem;
+    border: .1rem solid #777;
+    font-size: 1.6rem;
+}
+
+.form-login-btn{
+    background-color: #036bb1;
+    color: #fff;
+    border: .1rem solid #036bb1;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form-login-btn:hover{
+    background-color: #0465a5;
+}
+
+.form-login-link{
+    font-size: 1.6rem;
+    color: #229fe7;
+    margin: 1.2rem 0 1rem 0;
+}
+
+.form-login-link:hover{
+    text-decoration: underline;
+}
+
+.login-page-form span{
+    width: 2rem;
+    font-size: 1.8rem;
+    color: #888;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.login-page-form span::before{
+    content: "";
+    width: 15.5rem;
+    height: .1rem;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    right: 3.5rem;
+    transform: translateY(-50%);
+}
+
+.login-page-form span::after{
+    content: "";
+    width: 15.5rem;
+    height: .1rem;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 3.5rem;
+    transform: translateY(-50%);
+}
+
+.form-signup-btn{
+    background-color: #dbe8ec;
+    border: .1rem solid #dbdbdb;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form-signup-btn:hover{
+    background-color: #cedbdf;
+}
+/* End of Login Page */
+/* SignUp Page */
+.signup-page{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/nyc.png) center no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.signup-page-top{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-page-btn{
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #1980bb;
+    border: .1rem solid #1980bb;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+
+.login-page-btn:hover{
+    color: #146696;
+}
+
+.signup-page-content{
+    width: 60rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    padding: 5rem;
+    background-color: #fff;
+    border-radius: 2rem;
+}
+
+.signup-page-content h1{
+    text-align: center;
+    width: 80%;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: rgb(59, 59, 59);
+}
+
+.signup-page-form{
+    margin-top: 3rem;
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    
+}
+
+.input-group h3{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.input-group p{
+    font-size: 2rem;
+}
+
+.input-group input[type="radio"]{
+    width: 10%;
+    height: 5rem;
+    margin: 0rem 1rem 0 -1.5rem;
+    
+}
+
+.signup-btn{
+    width: 12rem;
+    margin-top: 2rem;
+}
+/* End of SignUp Page */

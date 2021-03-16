@@ -18,7 +18,7 @@
             <section class="section-1">
                 <div class="navbar-wrapper">
                     <nav class="navbar">
-                        <div class="navbar-logo">
+                        <div class="navbar-logo logo">
                             <span class="p-1">P</span>
                             <span class="p-2">P</span>
                             PayPal
@@ -88,14 +88,14 @@
                             </li>
                         </ul>
                         <div class="navbar-buttons">
-                           <button class="navbar-btn login-btn">Login</button>
-                           <button class="navbar-btn signup-btn">Sign up</button>
+                           <button class="navbar-btn login-btn login">Login</button>
+                           <button class="navbar-btn signup-btn signup">Sign up</button>
                         </div>
                     </nav>
                 </div>
                 <div class="banner">
                     <h1 class="banner-heading">Send money and shop with one easy account</h1>
-                    <button class="blue-btn">Sign Up for Free</button>
+                    <button class="blue-btn signup">Sign Up for Free</button>
                 </div>
             </section>
             <!-- End of Section 1 -->
@@ -103,7 +103,7 @@
             <!-- Banner 2 -->
             <div class="banner-2">
                 <h1 class="banner-2-heading">Looking for PayPal Business? Whether you're local or global, we're here to support you</h1>
-                <button class="banner-2-btn">PayPal for Business</button>
+                <button class="banner-2-btn signup-business">PayPal for Business</button>
             </div>
             <!-- End of Banner 2 -->
 
@@ -194,7 +194,7 @@
             <section class="section-5">
                 <div class="section-5-top">
                     <h2 class="section-5-top-heading">Sign Up and Get Started</h2>                        
-                    <button class="section-5-btn">Get Started</button>
+                    <button class="section-5-btn signup">Get Started</button>
                 </div>
                 <footer class="footer">
                     <div class="footer-top">
@@ -275,6 +275,55 @@
             <!-- End of Section 5 -->
         </div>
         <!-- End of Front Page -->
+
+        <!-- Login Page -->
+        <div class="login-page">
+            <div class="login-page-content">
+                <div class="login-page-logo logo">
+                    <span class="p-1">P</span>
+                    <span class="p-2">P</span>
+                    <span>Pay</span><span>Pal</span>
+                </div>
+                <form class="login-page-form">
+                    <input type="text" class="form-login-input" placeholder="Email or mobile number">
+                    <input type="password" class="form-login-input">
+                    <input type="button" class="form-login-btn" value="Log In">
+                    <a href="" class="form-login-link">Having trouble logging in?</a>
+                    <span>or</span>
+                    <input type="button" class="form-signup-btn signup" value="Sign Up">
+                </form>
+
+            </div>
+        </div>
+        <!-- End of Login Page -->
+        <!-- SignUp Page -->
+        <div class="signup-page">
+            <div class="signup-page-top">
+                <div class="login-page-logo logo">
+                    <span class="p-1">P</span>
+                    <span class="p-2">P</span>
+                    <span>Pay</span><span>Pal</span>
+                </div>
+                <button class="login-page-btn login">Log In</button>
+            </div>
+            <div class="signup-page-content">
+                <h1>PayPal is a secure, easy way to pay and get paid - sign up for free</h3>
+            <form  class="signup-page-form">
+                <div class="input-group">
+                    <input type="radio" name="checkbox" class="checkbox-personal" checked>
+                    <div class="option"><h3>Personal Account</h3>
+                    <p>Shop online or send and receive money. All without sharing your payment info.</p></div>
+                </div>
+                <div class="input-group">
+                    <input type="radio" name="checkbox" class="checkbox-business" >
+                    <div class="option"><h3>Business Account</h3>
+                    <p>Accept PayPal and all cards online or at the register. Send secure invoices to your customers.</p></div>
+                </div>
+            </form>
+            <button class="blue-btn signup-btn">Next</button>
+            </div>
+        </div>
+        <!-- End of SignUp Page -->
     </div>
 
     <script src="script.js"></script>
