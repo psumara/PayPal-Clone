@@ -266,7 +266,6 @@ html{
     position: relative;
     text-align: center;
     background: linear-gradient(to right, rgba(3,33,129,.9), rgba(9,67,153,.8), rgba(4,32,124,.9));
-    z-index: -1;
 }
 
 .banner-2-heading{
@@ -1149,7 +1148,7 @@ html{
     html{
         font-size: 45%;
     }
-
+   
     .section-2{
         padding: 10rem 0;
     }
@@ -1187,14 +1186,20 @@ html{
         padding: 0 4rem;
     }
 }
+@media(max-width: 750px){
+    .navbar-logo{
+        display: none;
+    }
+}
 
-@media(max-width: 550px){
+
+@media(max-width: 650px){
     .navbar-logo{
         display: none;
     }
 
     .banner-2-heading{
-        font-size: 4.5rem;
+        font-size: 1.5rem;
     }
 
     .services{
@@ -1236,7 +1241,25 @@ html{
     .footer-top{
         width: 90%;
     }
+
+    .footer{
+        width: 90%;
+    }
     
+    .footer-list-2 li{
+        display: none;
+    }
+
+    .signup-page-content{
+        width: 40rem;
+        height: 50rem;
+    }
+}
+
+@media(max-width: 450px){
+    .footer-top a img{
+        display: none;
+     }
 }
 
 @media(max-width: 400px){
@@ -1251,12 +1274,6 @@ html{
     .menu span{
         display: none;
     }
-
-    .number{
-        min-width: ;
-    }
-
-
 }
 
 
